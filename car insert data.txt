@@ -1,0 +1,57 @@
+insert into tb_car(
+    car_idx, user_id, car_number, car_model, car_parking, car_parking_lat,
+    car_parking_lng, car_fuel_effi, car_fuel_type, car_door_num, car_seat_num,
+    car_transmission, car_navi, car_back_cam, car_note, car_fee, car_avg_score,
+    car_date, car_state)
+values(1,'123','123가4567','소나타','서울 용산구 이태원동 127-28',126.99421849699539,
+	37.53401162895581, 10, '경유', 4, 4,
+	'자동', 'Y', 'Y', '참고사항', 10000, 3,
+	sysdate, '0000');
+	
+insert into tb_car(
+    car_idx, user_id, car_number, car_model, car_parking, car_parking_lat,
+    car_parking_lng, car_fuel_effi, car_fuel_type, car_door_num, car_seat_num,
+    car_transmission, car_navi, car_back_cam, car_note, car_fee, car_avg_score,
+    car_date, car_state)
+values(2,'123','123가4568','맥라렌','서울 용산구 이태원동 63-5',126.99087525183417,
+	37.5334356783438, 10, '경유', 4, 4,
+	'자동', 'Y', 'Y', '참고사항', 10000, 3,
+	sysdate, '0000');
+	
+insert into tb_car(
+    car_idx, user_id, car_number, car_model, car_parking, car_parking_lat,
+    car_parking_lng, car_fuel_effi, car_fuel_type, car_door_num, car_seat_num,
+    car_transmission, car_navi, car_back_cam, car_note, car_fee, car_avg_score,
+    car_date, car_state)
+values(3,'123','123가4569','람보르기니','서울 성동구 성수동1가 656-302',127.04564285335792,
+	37.548088279686716, 10, '경유', 4, 4,
+	'자동', 'Y', 'Y', '참고사항', 10000, 3,
+	sysdate, '0000');
+
+insert into tb_car(
+    car_idx, user_id, car_number, car_model, car_parking, car_parking_lat,
+    car_parking_lng, car_fuel_effi, car_fuel_type, car_door_num, car_seat_num,
+    car_transmission, car_navi, car_back_cam, car_note, car_fee, car_avg_score,
+    car_date, car_state)
+values(4,'123','123가4560','페라리','서울 성동구 성수동2가 315-100',127.05440457812,
+	37.5428308422967, 10, '경유', 4, 4,
+	'자동', 'Y', 'Y', '참고사항', 10000, 3,
+	sysdate, '0000');
+
+
+address_name: "서울 용산구 이태원동 127-28"
+x: "126.99421849699539"
+y: "37.53401162895581"
+
+"서울 용산구 이태원동 63-5"
+"126.99087525183417"
+"37.5334356783438"
+
+
+address_name: "서울 성동구 성수동1가 656-302"
+x: "127.04564285335792"
+y: "37.548088279686716"
+
+address_name: "서울 성동구 성수동2가 315-100"
+x: "127.05440457812"
+y: "37.5428308422967"

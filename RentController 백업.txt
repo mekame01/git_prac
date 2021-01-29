@@ -1,0 +1,49 @@
+package everyBB.rent.controller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/rent/*")
+public class RentController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    public RentController() {
+        super();
+    }
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String[] uriArr = request.getRequestURI().split("/");
+		switch (uriArr[uriArr.length-1]) {
+		case "select": rentSelect(request,response);
+			break;
+		case "list": rentList(request,response);
+			break;
+		case "detail": rentDetail(request,response);
+			break;
+		//default: throw new ToAlertException(ErrorCode.CD_404);
+		}
+
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+	}
+
+	private void rentSelect(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.getRequestDispatcher("/WEB-INF/view/rent/rentList.jsp")
+		.forward(request, response);
+	}
+
+	private void rentList(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+	}
+
+	private void rentDetail(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+	}
+
+}
