@@ -26,7 +26,7 @@ insert into tb_car(
 values(3,'123','123가4569','람보르기니','서울 성동구 성수동1가 656-302',127.04564285335792,
 	37.548088279686716, 10, '경유', 4, 4,
 	'자동', 'Y', 'Y', '참고사항', 10000, 3,
-	sysdate, '0000');
+	sysdate, '0000'); 
 
 insert into tb_car(
     car_idx, user_id, car_number, car_model, car_parking, car_parking_lat,
